@@ -55,9 +55,17 @@ A self-hosted research desk that watches new tokens, scores them, runs strategie
 - **FOMO fee-wallet trade reader and leaderboard**: A FOMO trader leaderboard without a login.
 - **Real Hyperliquid liquidation map + LiqWatcher Telegram alerts**: See where real leveraged positions liquidate.
 
+## How it works
+
+A technical case study of the architecture, one end-to-end flow, the key engineering decisions and how you would build something like this: **[docs/HOW-IT-WORKS.md](docs/HOW-IT-WORKS.md)**.
+
 ## A look at the code
 
-**Drawdown protections**: [`snippets/protections.mjs`](snippets/protections.mjs). A stop-out guard and a tiered equity hard stop for an automated desk. It smooths out single price wicks and latches at the top tier until a human resumes trading.
+Real excerpts from the source, shown for illustration:
+
+- **Drawdown protections** ([`snippets/protections.mjs`](snippets/protections.mjs)): A stop-out guard and a tiered equity hard stop for an automated desk. It smooths out single price wicks and latches at the top tier until a human resumes trading.
+- **Expected value and Kelly stake** ([`snippets/ev-and-kelly.mjs`](snippets/ev-and-kelly.mjs)): The entry decision as pure maths: expected value after fees, slippage, price impact and failed transactions, a fractional-Kelly stake, and a loop that halves the stake until the EV clears the bar or declines.
+- **Hash-chained journal** ([`snippets/attested-journal.mjs`](snippets/attested-journal.mjs)): Each journal row carries a hash of the previous hash plus the row, so editing, inserting, removing or reordering a row is detectable by anyone with the file.
 
 ## Requirements (full version)
 
