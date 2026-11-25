@@ -8,6 +8,8 @@
   <b>Memecoin research desk with paper and live trading (Node.js).</b>
 </p>
 
+<p align="center"><sub>Memecoin trading bot & research desk source code · Solana pump.fun · paper trading first · Node.js</sub></p>
+
 <p align="center">
   <a href="https://outrider-demo.mikodes.com/"><b>▶ Live demo</b></a> ·
   <a href="https://outrider.mikodes.com/docs/"><b>Docs</b></a> ·
@@ -77,6 +79,20 @@ Real excerpts from the source, shown for illustration:
 - Optional: ANTHROPIC_API_KEY
 
 Not included: Live trading beyond pump.fun in the core: Hyperliquid live trading belongs to the optional perps module; Any profit or edge. The Research pane and `outrider research` show the buyer's own measurements on their own data; Third-party subscriptions: private Solana RPC, Anthropic API, TypeSafe Jev access, Telegram bot; Hosting, domain, TLS/reverse proxy for the dashboard/admin; Pre-recorded data: the buyer records their own pump.fun stream and wallet data.
+
+## FAQ
+
+**Is this the full source code?**  
+No. This repository is a showcase with screenshots, a technical case study and real code excerpts. The complete Outrider source code is sold at [store.mikodes.com/p/outrider](https://store.mikodes.com/p/outrider/).
+
+**What is Outrider built with?**  
+Node.js.
+
+**Can I try it before buying?**  
+Yes, open the [live demo](https://outrider-demo.mikodes.com/).
+
+**Do I get help with the installation?**  
+Free setup help is included with the store purchase; questions go to [mikodes.com/support](https://mikodes.com/support).
 
 ## Get the full source code
 
